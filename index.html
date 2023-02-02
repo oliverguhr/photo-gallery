@@ -1,0 +1,281 @@
+<html>
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Abel', sans-serif;
+            color: #222;
+        }
+
+        .gallery ul {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 2vmin;
+            list-style-type: none; 
+            padding-inline-start: 0px;
+        }
+
+        .gallery li {
+            height: 40vh;
+            flex-grow: 1;
+            margin: 2vmin;
+        }
+
+        .gallery li:last-child {            
+            flex-grow: 10;
+        }
+
+        .gallery img {
+            max-height: 100%;
+            min-width: 100%;
+            object-fit: cover;
+            vertical-align: bottom;
+            border-radius: 0.1vmin;
+        }
+
+
+
+        @media (max-aspect-ratio: 1/1) {
+            .gallery li {
+                height: 30vh;
+            }
+        }
+
+
+        @media (max-height: 480px) {
+            .gallery li {
+                height: 80vh;
+            }
+        }
+
+
+
+        @media (max-aspect-ratio: 1/1) and (max-width: 480px) {
+            .gallery ul {
+                flex-direction: row;
+            }
+
+            .gallery li {
+                height: auto;
+                width: 100%;
+            }
+
+            .gallery img {
+                width: 100%;
+                max-height: 75vh;
+                min-width: 0;
+            }
+        }
+
+        .head{
+            margin: 4vmin 4vmin 5vmin 4vmin;
+            height: 6vmin;
+            line-height: 6vmin;
+        }
+
+        .head h1{
+            float: left;
+            font-weight: lighter;
+            font-size: 3em;
+            margin: 0px;
+        }
+        .head .nav {
+            list-style-type: none; 
+            margin-right: 5em;
+        }
+
+        .head .nav li{
+            float: right;
+            padding-left: 5em;
+        }
+        .head .nav a{
+            color:#555;
+            font-size: 1.4em;
+            text-decoration: none;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="head">
+            <h1>Oliver Guhr</h1>
+
+            <ul class="nav">
+                <li><a href="#people">People</a></li>
+                <li><a href="#places">Places</a></li>
+                <li><a href="#pizza">Pizza</a></li>
+            </ul>
+    </div>
+    <div class="gallery">
+        <ul>
+            <li>
+                <a href="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814785/photostream-photos/DSC05466_kwlv0n.jpg"
+                    data-fancybox data-fancybox="gallery" data-caption="A Toyota Previa covered in graffiti">
+                    <img src="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814785/photostream-photos/DSC05466_kwlv0n.jpg"
+                        alt="A Toyota Previa covered in graffiti" loading="lazy">
+                </a>
+            </li>
+            <li><a href="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814785/photostream-photos/DSC05621_zgtcco.jpg"
+                    data-fancybox data-fancybox="gallery" data-caption="Interesting living room light through a window">
+                    <img src="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814785/photostream-photos/DSC05621_zgtcco.jpg"
+                        alt="Interesting living room light through a window" loading="lazy">
+                </a></li>
+            <li><a href="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814785/photostream-photos/DSC05513_gfbiwi.jpg"
+                    data-fancybox data-caption="Sara on a red bike">
+                    <img src="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814785/photostream-photos/DSC05513_gfbiwi.jpg"
+                        alt="Sara on a red bike" loading="lazy">
+                </a></li>
+            <li><a href="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814785/photostream-photos/DSC05588_nb0dma.jpg"
+                    data-fancybox data-caption="XOXO venue in between talks">
+                    <img src="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814785/photostream-photos/DSC05588_nb0dma.jpg"
+                        alt="XOXO venue in between talks" loading="lazy">
+                </a></li>
+            <li><a href="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814785/photostream-photos/DSC05459_ziuomy.jpg"
+                    data-fancybox data-caption="Trees lit by green light during dusk">
+                    <img src="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814785/photostream-photos/DSC05459_ziuomy.jpg"
+                        alt="Trees lit by green light during dusk" loading="lazy">
+                </a></li>
+            <li><a href="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814785/photostream-photos/DSC05586_oj8jfo.jpg"
+                    data-fancybox data-caption="Portrait of Justin Pervorse">
+                    <img src="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814785/photostream-photos/DSC05586_oj8jfo.jpg"
+                        alt="Portrait of Justin Pervorse" loading="lazy">
+                </a></li>
+            <li><a href="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814785/photostream-photos/DSC05465_dtkwef.jpg"
+                    data-fancybox data-caption="Empty bike racks outside a hotel">
+                    <img src="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814785/photostream-photos/DSC05465_dtkwef.jpg"
+                        alt="Empty bike racks outside a hotel" loading="lazy">
+                </a></li>
+            <li><a href="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814785/photostream-photos/DSC05626_ytsf3j.jpg"
+                    data-fancybox data-caption="Heavy rain on an intersection">
+                    <img src="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814785/photostream-photos/DSC05626_ytsf3j.jpg"
+                        alt="Heavy rain on an intersection" loading="lazy">
+                </a></li>
+            <li><a href="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814785/photostream-photos/DSC05449_l9kukz.jpg"
+                    data-fancybox data-caption="Payam Rajabi eating peanut chicken">
+                    <img src="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814785/photostream-photos/DSC05449_l9kukz.jpg"
+                        alt="Payam Rajabi eating peanut chicken" loading="lazy">
+                </a></li>
+            <li><a href="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814785/photostream-photos/DSC05544_aczrb9.jpg"
+                    data-fancybox data-caption="Portland skyline sunset">
+                    <img src="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814785/photostream-photos/DSC05544_aczrb9.jpg"
+                        alt="Portland skyline sunset" loading="lazy">
+                </a></li>
+            <li><a href="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814785/photostream-photos/DSC05447_mvffor.jpg"
+                    data-fancybox data-caption="Interior at Nong's">
+                    <img src="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814785/photostream-photos/DSC05447_mvffor.jpg"
+                        alt="Interior at Nong's" loading="lazy">
+                </a></li>
+            <li>
+                <a href="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814785/photostream-photos/DSC05466_kwlv0n.jpg"
+                    data-fancybox data-fancybox="gallery" data-caption="A Toyota Previa covered in graffiti">
+                    <img src="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814785/photostream-photos/DSC05466_kwlv0n.jpg"
+                        alt="A Toyota Previa covered in graffiti" loading="lazy">
+                </a>
+            </li>
+    
+            <li><a href="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814785/photostream-photos/DSC05513_gfbiwi.jpg"
+                    data-fancybox data-caption="Sara on a red bike">
+                    <img src="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814785/photostream-photos/DSC05513_gfbiwi.jpg"
+                        alt="Sara on a red bike" loading="lazy">
+                </a></li>
+            <li><a href="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814785/photostream-photos/DSC05588_nb0dma.jpg"
+                    data-fancybox data-caption="XOXO venue in between talks">
+                    <img src="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814785/photostream-photos/DSC05588_nb0dma.jpg"
+                        alt="XOXO venue in between talks" loading="lazy">
+                </a></li>
+            <li><a href="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814785/photostream-photos/DSC05459_ziuomy.jpg"
+                    data-fancybox data-caption="Trees lit by green light during dusk">
+                    <img src="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814785/photostream-photos/DSC05459_ziuomy.jpg"
+                        alt="Trees lit by green light during dusk" loading="lazy">
+                </a></li>
+            <li><a href="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814785/photostream-photos/DSC05586_oj8jfo.jpg"
+                    data-fancybox data-caption="Portrait of Justin Pervorse">
+                    <img src="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814785/photostream-photos/DSC05586_oj8jfo.jpg"
+                        alt="Portrait of Justin Pervorse" loading="lazy">
+                </a></li>
+    
+            <li><a href="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814785/photostream-photos/DSC05626_ytsf3j.jpg"
+                    data-fancybox data-caption="Heavy rain on an intersection">
+                    <img src="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814785/photostream-photos/DSC05626_ytsf3j.jpg"
+                        alt="Heavy rain on an intersection" loading="lazy">
+                </a></li>
+            <li><a href="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814785/photostream-photos/DSC05449_l9kukz.jpg"
+                    data-fancybox data-caption="Payam Rajabi eating peanut chicken">
+                    <img src="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814785/photostream-photos/DSC05449_l9kukz.jpg"
+                        alt="Payam Rajabi eating peanut chicken" loading="lazy">
+                </a></li>
+            <li><a href="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814785/photostream-photos/DSC05544_aczrb9.jpg"
+                    data-fancybox data-caption="Portland skyline sunset">
+                    <img src="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814785/photostream-photos/DSC05544_aczrb9.jpg"
+                        alt="Portland skyline sunset" loading="lazy">
+                </a></li>
+            <li><a href="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814785/photostream-photos/DSC05447_mvffor.jpg"
+                    data-fancybox data-caption="Interior at Nong's">
+                    <img src="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814785/photostream-photos/DSC05447_mvffor.jpg"
+                        alt="Interior at Nong's" loading="lazy">
+                </a></li>
+            <li>
+                <a href="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814785/photostream-photos/DSC05466_kwlv0n.jpg"
+                    data-fancybox data-fancybox="gallery" data-caption="A Toyota Previa covered in graffiti">
+                    <img src="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814785/photostream-photos/DSC05466_kwlv0n.jpg"
+                        alt="A Toyota Previa covered in graffiti" loading="lazy">
+                </a>
+            </li>
+            <li><a href="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814785/photostream-photos/DSC05621_zgtcco.jpg"
+                    data-fancybox data-fancybox="gallery" data-caption="Interesting living room light through a window">
+                    <img src="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814785/photostream-photos/DSC05621_zgtcco.jpg"
+                        alt="Interesting living room light through a window" loading="lazy">
+                </a></li>
+            <li><a href="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814785/photostream-photos/DSC05513_gfbiwi.jpg"
+                    data-fancybox data-caption="Sara on a red bike">
+                    <img src="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814785/photostream-photos/DSC05513_gfbiwi.jpg"
+                        alt="Sara on a red bike" loading="lazy">
+                </a></li>
+            <li><a href="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814785/photostream-photos/DSC05588_nb0dma.jpg"
+                    data-fancybox data-caption="XOXO venue in between talks">
+                    <img src="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814785/photostream-photos/DSC05588_nb0dma.jpg"
+                        alt="XOXO venue in between talks" loading="lazy">
+                </a></li>
+            <li><a href="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814785/photostream-photos/DSC05459_ziuomy.jpg"
+                    data-fancybox data-caption="Trees lit by green light during dusk">
+                    <img src="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814785/photostream-photos/DSC05459_ziuomy.jpg"
+                        alt="Trees lit by green light during dusk" loading="lazy">
+                </a></li>
+            <li><a href="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814785/photostream-photos/DSC05586_oj8jfo.jpg"
+                    data-fancybox data-caption="Portrait of Justin Pervorse">
+                    <img src="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814785/photostream-photos/DSC05586_oj8jfo.jpg"
+                        alt="Portrait of Justin Pervorse" loading="lazy">
+                </a></li>
+    
+            <li id="people"><a href="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814785/photostream-photos/DSC05626_ytsf3j.jpg"
+                    data-fancybox data-caption="Heavy rain on an intersection">
+                    <img src="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814785/photostream-photos/DSC05626_ytsf3j.jpg"
+                        alt="Heavy rain on an intersection" loading="lazy">
+                </a></li>
+            <li><a href="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814785/photostream-photos/DSC05449_l9kukz.jpg"
+                    data-fancybox data-caption="Payam Rajabi eating peanut chicken">
+                    <img src="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814785/photostream-photos/DSC05449_l9kukz.jpg"
+                        alt="Payam Rajabi eating peanut chicken" loading="lazy">
+                </a></li>
+            <li><a href="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814785/photostream-photos/DSC05544_aczrb9.jpg"
+                    data-fancybox data-caption="Portland skyline sunset">
+                    <img src="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814785/photostream-photos/DSC05544_aczrb9.jpg"
+                        alt="Portland skyline sunset" loading="lazy">
+                </a></li>
+            <li><a href="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814785/photostream-photos/DSC05447_mvffor.jpg"
+                    data-fancybox data-caption="Interior at Nong's">
+                    <img src="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814785/photostream-photos/DSC05447_mvffor.jpg"
+                        alt="Interior at Nong's" loading="lazy">
+                </a></li>
+    
+            <!--  Adding an empty <li> here so the final photo doesn't stretch like crazy. Try removing it and see what happens!  -->
+            <li></li>
+        </ul>
+    </div>
+</body>
+
+</html>
